@@ -9,6 +9,11 @@ class App extends Component {
         <button>Push</button>
         <button className="pink">Don't Push</button>
         <button>Maybe Push</button>
+
+        <div className="container">
+          <div className="sidebar">Sidebar</div>
+          <div className="main">Main</div>
+        </div>
       </div>
     );
   }

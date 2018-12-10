@@ -2,9 +2,20 @@
   text-align: center;
 }
 button {
-  background-color: #61dafb;
-    & :hover {
-      background-color: pink;
-      color: orange;
+    background-color: pink;
+}
+.container {
+  display: flex;
+  width: 80%;
+  margin: 0px auto;
+
+  .sidebar {
+    width: 40%;
+    background-color: lightblue;
+  }
+
+  .main {
+    width: 60%;
+    background-color: yellow;
   }
 }
