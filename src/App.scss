@@ -2,12 +2,28 @@
   text-align: center;
 }
 button {
-    background-color: pink;
+  background-color: pink;
+  margin-bottom: 10px;
+
+    &.blue {
+      background-color: lightblue;
+      &:hover {
+        background-color: orange;
+      }
+    }
+    &:hover {
+      background-color: gray;
+    }
 }
 .container {
   display: flex;
   width: 80%;
   margin: 0px auto;
+  height: 200px;
+
+  .sidebar, .main {
+    color: orange;
+  }
 
   .sidebar {
     width: 40%;
@@ -17,5 +33,13 @@ button {
   .main {
     width: 60%;
     background-color: yellow;
+  }
+}
+
+.container {
+  &.right-nav {
+    .sidebar {
+      background-color: green;
+    }
   }
 }
